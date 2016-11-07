@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446D1036387DB387D28932CE /* Pods_CheckInPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B152ABC728775F6B3AC48B /* Pods_CheckInPro.framework */; };
+		990C36201DD0B851004C3122 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C361F1DD0B851004C3122 /* Post.swift */; };
 		9956AAD11DD05CFB00EE94FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956AAD01DD05CFB00EE94FC /* AppDelegate.swift */; };
 		9956AAD31DD05CFB00EE94FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956AAD21DD05CFB00EE94FC /* ViewController.swift */; };
 		9956AAD61DD05CFB00EE94FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956AAD41DD05CFB00EE94FC /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17C632DCE7A5A2E925D272EB /* Pods-CheckInPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckInPro/Pods-CheckInPro.debug.xcconfig"; sourceTree = "<group>"; };
+		568AC113884C01C5EE98830F /* Pods-CheckInPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckInPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckInPro/Pods-CheckInPro.release.xcconfig"; sourceTree = "<group>"; };
+		990C361F1DD0B851004C3122 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9956AACD1DD05CFB00EE94FC /* CheckInPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956AAD01DD05CFB00EE94FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9956AAD21DD05CFB00EE94FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		9956AAD71DD05CFB00EE94FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9956AADA1DD05CFB00EE94FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9956AADC1DD05CFB00EE94FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0B152ABC728775F6B3AC48B /* Pods_CheckInPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446D1036387DB387D28932CE /* Pods_CheckInPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D288FAC5D5ECC6440433FE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C632DCE7A5A2E925D272EB /* Pods-CheckInPro.debug.xcconfig */,
+				568AC113884C01C5EE98830F /* Pods-CheckInPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		990C361D1DD0B837004C3122 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				990C361F1DD0B851004C3122 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		990C361E1DD0B83C004C3122 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		9956AAC41DD05CFB00EE94FC = {
 			isa = PBXGroup;
 			children = (
 				9956AACF1DD05CFB00EE94FC /* CheckInPro */,
 				9956AACE1DD05CFB00EE94FC /* Products */,
+				8D288FAC5D5ECC6440433FE6 /* Pods */,
+				A6A6F0245AE125AD86CA7583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +87,8 @@
 		9956AACF1DD05CFB00EE94FC /* CheckInPro */ = {
 			isa = PBXGroup;
 			children = (
+				990C361E1DD0B83C004C3122 /* Service */,
+				990C361D1DD0B837004C3122 /* Model */,
 				9956AAD01DD05CFB00EE94FC /* AppDelegate.swift */,
 				9956AAD21DD05CFB00EE94FC /* ViewController.swift */,
 				9956AAD41DD05CFB00EE94FC /* Main.storyboard */,
@@ -64,6 +99,14 @@
 			path = CheckInPro;
 			sourceTree = "<group>";
 		};
+		A6A6F0245AE125AD86CA7583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0B152ABC728775F6B3AC48B /* Pods_CheckInPro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9956AADF1DD05CFB00EE94FC /* Build configuration list for PBXNativeTarget "CheckInPro" */;
 			buildPhases = (
+				9FD02CA3958CC215F7A135C4 /* [CP] Check Pods Manifest.lock */,
 				9956AAC91DD05CFB00EE94FC /* Sources */,
 				9956AACA1DD05CFB00EE94FC /* Frameworks */,
 				9956AACB1DD05CFB00EE94FC /* Resources */,
+				868362A29B9D6DB4BDFCCE07 /* [CP] Embed Pods Frameworks */,
+				4E3C1D7178C9FED3C4F53B1C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +177,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E3C1D7178C9FED3C4F53B1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckInPro/Pods-CheckInPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868362A29B9D6DB4BDFCCE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckInPro/Pods-CheckInPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD02CA3958CC215F7A135C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9956AAC91DD05CFB00EE94FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990C36201DD0B851004C3122 /* Post.swift in Sources */,
 				9956AAD31DD05CFB00EE94FC /* ViewController.swift in Sources */,
 				9956AAD11DD05CFB00EE94FC /* AppDelegate.swift in Sources */,
 			);
@@ -256,6 +351,7 @@
 		};
 		9956AAE01DD05CFB00EE94FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C632DCE7A5A2E925D272EB /* Pods-CheckInPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckInPro/Info.plist;
@@ -268,6 +364,7 @@
 		};
 		9956AAE11DD05CFB00EE94FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 568AC113884C01C5EE98830F /* Pods-CheckInPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckInPro/Info.plist;
@@ -297,6 +394,7 @@
 				9956AAE11DD05CFB00EE94FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
