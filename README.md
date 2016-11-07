@@ -2,7 +2,7 @@
 
 ## User stories
 ### Required
-[ ] User can login to multiple social network
+[] User can login to multiple social network
 
 [ ] User can post to multiple social network (logined)
 
@@ -18,7 +18,8 @@
 [ ] Profile: 
 - View user information
 - View post count, history post
-- View near place:
+
+[ ] View near place:
   * Park
   * Movie
   * Food
