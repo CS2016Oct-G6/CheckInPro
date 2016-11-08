@@ -14,6 +14,9 @@
 		9956AAD61DD05CFB00EE94FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956AAD41DD05CFB00EE94FC /* Main.storyboard */; };
 		9956AAD81DD05CFB00EE94FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9956AAD71DD05CFB00EE94FC /* Assets.xcassets */; };
 		9956AADB1DD05CFB00EE94FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956AAD91DD05CFB00EE94FC /* LaunchScreen.storyboard */; };
+		999910981DD1AF2900D84A1F /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999910971DD1AF2900D84A1F /* TwitterClient.swift */; };
+		9999109A1DD1AF3100D84A1F /* FacebookClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999910991DD1AF3100D84A1F /* FacebookClient.swift */; };
+		9999109C1DD1AF9500D84A1F /* WeiboClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999109B1DD1AF9500D84A1F /* WeiboClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		9956AAD71DD05CFB00EE94FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9956AADA1DD05CFB00EE94FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9956AADC1DD05CFB00EE94FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999910971DD1AF2900D84A1F /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		999910991DD1AF3100D84A1F /* FacebookClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookClient.swift; sourceTree = "<group>"; };
+		9999109B1DD1AF9500D84A1F /* WeiboClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboClient.swift; sourceTree = "<group>"; };
 		B0B152ABC728775F6B3AC48B /* Pods_CheckInPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckInPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +68,9 @@
 		990C361E1DD0B83C004C3122 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				999910971DD1AF2900D84A1F /* TwitterClient.swift */,
+				999910991DD1AF3100D84A1F /* FacebookClient.swift */,
+				9999109B1DD1AF9500D84A1F /* WeiboClient.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -230,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999910981DD1AF2900D84A1F /* TwitterClient.swift in Sources */,
+				9999109C1DD1AF9500D84A1F /* WeiboClient.swift in Sources */,
 				990C36201DD0B851004C3122 /* Post.swift in Sources */,
 				9956AAD31DD05CFB00EE94FC /* ViewController.swift in Sources */,
+				9999109A1DD1AF3100D84A1F /* FacebookClient.swift in Sources */,
 				9956AAD11DD05CFB00EE94FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

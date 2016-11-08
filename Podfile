@@ -6,5 +6,7 @@ target 'CheckInPro' do
   use_frameworks!
   pod 'Alamofire', '~> 4.0'
   pod 'ObjectMapper', '~> 2.2'
+  pod 'OAuthSwift', '~> 1.1.0'
+  pod 'OAuthSwiftAlamofire'
 
 end
