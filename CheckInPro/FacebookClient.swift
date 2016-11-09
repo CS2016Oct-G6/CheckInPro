@@ -10,19 +10,19 @@ import Foundation
 import OAuthSwift
 
 class FacebookClient: OAuth2Swift {
-    
+
     static var sharedInstance = FacebookClient(
-        consumerKey:    "********",
-        consumerSecret: "********",
-        authorizeUrl:   "https://api.instagram.com/oauth/authorize",
+        consumerKey:    "261970457534546",
+        consumerSecret: "830882057f0f683dc3902d35caacbede",
+        authorizeUrl:   "https://www.facebook.com/dialog/oauth",
         responseType:   "token"
     )
     
     func login(){
         self.authorize(
-            withCallbackURL: "CIP://facebook",
-            scope: "likes+comments", state:"INSTAGRAM",
-
+            withCallbackURL: "CIP://oauth-callback/facebook",
+            scope: "email",
+            state:"FACEBOOK",
             success: { credential, response, parameters in
                 
             },
