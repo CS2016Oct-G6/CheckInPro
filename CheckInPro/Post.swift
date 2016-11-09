@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import ObjectMapper
+import CoreLocation
 
-class Post {
+class Post: Mappable {
+    var status:String?
+    var location: CLLocation?
+    var imageUrl: String?
+    var imageData: NSData?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
 
+    }
 }
