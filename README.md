@@ -44,3 +44,7 @@
 ## Wireframe
 
 You can have a look at the most up-to-date wireframe [here](https://ninjamock.com/s/XDD9F)
+
+## Survey
+
+The survey link is [here](https://goo.gl/forms/KcPqcGOKimtNNZ483)
